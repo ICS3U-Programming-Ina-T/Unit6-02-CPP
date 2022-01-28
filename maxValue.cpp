@@ -31,9 +31,8 @@ int main() {
     const int MIN_NUM = 0;
     const int MAX_NUM = 100;
 
-    // initializing sum and counter
+    // initializing counter
     int counter = 0;
-    int sum = 0;
 
     // declaring variables
     std::array<int, MAX_ARRAY_SIZE> ranNumsUser;
@@ -54,7 +53,6 @@ int main() {
         int randomNumber = (rand() % (MIN_NUM, MIN_NUM + MAX_NUM));
 
         ranNumsUser[counter] = randomNumber;
-        sum = sum + ranNumsUser[counter];
         std::cout << ranNumsUser[counter];
         std::cout << " added to the list at position " << counter;
         std::cout << std::endl;
